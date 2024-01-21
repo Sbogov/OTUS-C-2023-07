@@ -1,0 +1,103 @@
+TranslationUnitDecl 0xdf64f8 <<invalid sloc>> <invalid sloc>
+|-TypedefDecl 0xdf6d20 <<invalid sloc>> <invalid sloc> implicit __int128_t '__int128'
+| `-BuiltinType 0xdf6ac0 '__int128'
+|-TypedefDecl 0xdf6d90 <<invalid sloc>> <invalid sloc> implicit __uint128_t 'unsigned __int128'
+| `-BuiltinType 0xdf6ae0 'unsigned __int128'
+|-TypedefDecl 0xdf7098 <<invalid sloc>> <invalid sloc> implicit __NSConstantString 'struct __NSConstantString_tag'
+| `-RecordType 0xdf6e70 'struct __NSConstantString_tag'
+|   `-Record 0xdf6de8 '__NSConstantString_tag'
+|-TypedefDecl 0xdf7130 <<invalid sloc>> <invalid sloc> implicit __builtin_ms_va_list 'char *'
+| `-PointerType 0xdf70f0 'char *'
+|   `-BuiltinType 0xdf65a0 'char'
+|-TypedefDecl 0xdf7428 <<invalid sloc>> <invalid sloc> implicit __builtin_va_list 'struct __va_list_tag[1]'
+| `-ConstantArrayType 0xdf73d0 'struct __va_list_tag[1]' 1 
+|   `-RecordType 0xdf7210 'struct __va_list_tag'
+|     `-Record 0xdf7188 '__va_list_tag'
+|-FunctionDecl 0xe5d160 <../tests/test1/example_1.c:3:1, line:5:1> line:3:6 used f1 'void ()'
+| `-CompoundStmt 0xe5d568 <col:11, line:5:1>
+|   `-CallExpr 0xe5d510 <line:4:5, col:25> 'int'
+|     |-ImplicitCastExpr 0xe5d4f8 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|     | `-DeclRefExpr 0xe5d428 <col:5> 'int (const char *, ...)' Function 0xe5d288 'printf' 'int (const char *, ...)'
+|     `-ImplicitCastExpr 0xe5d550 <col:12> 'const char *' <NoOp>
+|       `-ImplicitCastExpr 0xe5d538 <col:12> 'char *' <ArrayToPointerDecay>
+|         `-StringLiteral 0xe5d488 <col:12> 'char[11]' lvalue "Inside f1\n"
+|-FunctionDecl 0xe5d288 <col:5> col:5 implicit used printf 'int (const char *, ...)' extern
+| |-ParmVarDecl 0xe5d380 <<invalid sloc>> <invalid sloc> 'const char *'
+| |-BuiltinAttr 0xe5d328 <<invalid sloc>> Implicit 824
+| `-FormatAttr 0xe5d3f0 <col:5> Implicit printf 1 2
+|-FunctionDecl 0xe5d5a0 <line:7:1, line:10:1> line:7:6 used f2 'void ()'
+| `-CompoundStmt 0xe5d790 <col:11, line:10:1>
+|   |-CallExpr 0xe5d6b8 <line:8:5, col:25> 'int'
+|   | |-ImplicitCastExpr 0xe5d6a0 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0xe5d640 <col:5> 'int (const char *, ...)' Function 0xe5d288 'printf' 'int (const char *, ...)'
+|   | `-ImplicitCastExpr 0xe5d6f8 <col:12> 'const char *' <NoOp>
+|   |   `-ImplicitCastExpr 0xe5d6e0 <col:12> 'char *' <ArrayToPointerDecay>
+|   |     `-StringLiteral 0xe5d660 <col:12> 'char[11]' lvalue "Inside f2\n"
+|   `-CallExpr 0xe5d770 <line:9:2, col:5> 'void'
+|     `-ImplicitCastExpr 0xe5d758 <col:2> 'void (*)()' <FunctionToPointerDecay>
+|       `-DeclRefExpr 0xe5d710 <col:2> 'void ()' Function 0xe5d160 'f1' 'void ()'
+|-FunctionDecl 0xe5d7d0 <line:12:1, line:14:1> line:12:6 used f3 'void ()'
+| `-CompoundStmt 0xe5d940 <col:11, line:14:1>
+|   `-CallExpr 0xe5d8e8 <line:13:5, col:25> 'int'
+|     |-ImplicitCastExpr 0xe5d8d0 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|     | `-DeclRefExpr 0xe5d870 <col:5> 'int (const char *, ...)' Function 0xe5d288 'printf' 'int (const char *, ...)'
+|     `-ImplicitCastExpr 0xe5d928 <col:12> 'const char *' <NoOp>
+|       `-ImplicitCastExpr 0xe5d910 <col:12> 'char *' <ArrayToPointerDecay>
+|         `-StringLiteral 0xe5d890 <col:12> 'char[11]' lvalue "Inside f3\n"
+|-FunctionDecl 0xe5d978 <line:16:1, line:18:1> line:16:6 used f4 'void ()'
+| `-CompoundStmt 0xe5dae8 <col:11, line:18:1>
+|   `-CallExpr 0xe5da90 <line:17:5, col:25> 'int'
+|     |-ImplicitCastExpr 0xe5da78 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|     | `-DeclRefExpr 0xe5da18 <col:5> 'int (const char *, ...)' Function 0xe5d288 'printf' 'int (const char *, ...)'
+|     `-ImplicitCastExpr 0xe5dad0 <col:12> 'const char *' <NoOp>
+|       `-ImplicitCastExpr 0xe5dab8 <col:12> 'char *' <ArrayToPointerDecay>
+|         `-StringLiteral 0xe5da38 <col:12> 'char[11]' lvalue "Inside f4\n"
+|-FunctionDecl 0xe5dd38 <line:21:1, line:26:1> line:21:6 used f5 'void (void (*)(), void (*)())'
+| |-ParmVarDecl 0xe5db88 <col:9, col:23> col:16 used func1 'void (*)()'
+| |-ParmVarDecl 0xe5dc20 <col:26, col:40> col:33 used func2 'void (*)()'
+| `-CompoundStmt 0xe5e130 <col:43, line:26:1>
+|   |-CallExpr 0xe5dee8 <line:22:5, col:46> 'int'
+|   | |-ImplicitCastExpr 0xe5ded0 <col:5> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|   | | `-DeclRefExpr 0xe5dde8 <col:5> 'int (const char *, ...)' Function 0xe5d288 'printf' 'int (const char *, ...)'
+|   | |-ImplicitCastExpr 0xe5df38 <col:12> 'const char *' <NoOp>
+|   | | `-ImplicitCastExpr 0xe5df20 <col:12> 'char *' <ArrayToPointerDecay>
+|   | |   `-StringLiteral 0xe5de48 <col:12> 'char[18]' lvalue "Inside f5 %p, %p\n"
+|   | |-ImplicitCastExpr 0xe5df50 <col:34> 'void (*)()' <LValueToRValue>
+|   | | `-DeclRefExpr 0xe5de78 <col:34> 'void (*)()' lvalue ParmVar 0xe5db88 'func1' 'void (*)()'
+|   | `-ImplicitCastExpr 0xe5df68 <col:41> 'void (*)()' <LValueToRValue>
+|   |   `-DeclRefExpr 0xe5de98 <col:41> 'void (*)()' lvalue ParmVar 0xe5dc20 'func2' 'void (*)()'
+|   |-CallExpr 0xe5dfb8 <line:23:2, col:8> 'void'
+|   | `-ImplicitCastExpr 0xe5dfa0 <col:2> 'void (*)()' <LValueToRValue>
+|   |   `-DeclRefExpr 0xe5df80 <col:2> 'void (*)()' lvalue ParmVar 0xe5db88 'func1' 'void (*)()'
+|   |-CallExpr 0xe5e010 <line:24:2, col:8> 'void'
+|   | `-ImplicitCastExpr 0xe5dff8 <col:2> 'void (*)()' <LValueToRValue>
+|   |   `-DeclRefExpr 0xe5dfd8 <col:2> 'void (*)()' lvalue ParmVar 0xe5dc20 'func2' 'void (*)()'
+|   `-CallExpr 0xe5e0d8 <line:25:2, col:19> 'int'
+|     |-ImplicitCastExpr 0xe5e0c0 <col:2> 'int (*)(const char *, ...)' <FunctionToPointerDecay>
+|     | `-DeclRefExpr 0xe5e030 <col:2> 'int (const char *, ...)' Function 0xe5d288 'printf' 'int (const char *, ...)'
+|     `-ImplicitCastExpr 0xe5e118 <col:9> 'const char *' <NoOp>
+|       `-ImplicitCastExpr 0xe5e100 <col:9> 'char *' <ArrayToPointerDecay>
+|         `-StringLiteral 0xe5e088 <col:9> 'char[8]' lvalue "f5 end\n"
+`-FunctionDecl 0xe5e690 <line:28:1, line:35:1> line:28:5 main 'int ()'
+  `-CompoundStmt 0xe5e9f0 <col:12, line:35:1>
+    |-CallExpr 0xe5e768 <line:29:5, col:8> 'void'
+    | `-ImplicitCastExpr 0xe5e750 <col:5> 'void (*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0xe5e730 <col:5> 'void ()' Function 0xe5d160 'f1' 'void ()'
+    |-CallExpr 0xe5e7c0 <line:30:5, col:8> 'void'
+    | `-ImplicitCastExpr 0xe5e7a8 <col:5> 'void (*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0xe5e788 <col:5> 'void ()' Function 0xe5d5a0 'f2' 'void ()'
+    |-CallExpr 0xe5e818 <line:31:2, col:5> 'void'
+    | `-ImplicitCastExpr 0xe5e800 <col:2> 'void (*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0xe5e7e0 <col:2> 'void ()' Function 0xe5d7d0 'f3' 'void ()'
+    |-CallExpr 0xe5e870 <line:32:2, col:5> 'void'
+    | `-ImplicitCastExpr 0xe5e858 <col:2> 'void (*)()' <FunctionToPointerDecay>
+    |   `-DeclRefExpr 0xe5e838 <col:2> 'void ()' Function 0xe5d978 'f4' 'void ()'
+    |-CallExpr 0xe5e990 <line:33:2, col:13> 'void'
+    | |-ImplicitCastExpr 0xe5e978 <col:2> 'void (*)(void (*)(), void (*)())' <FunctionToPointerDecay>
+    | | `-DeclRefExpr 0xe5e890 <col:2> 'void (void (*)(), void (*)())' Function 0xe5dd38 'f5' 'void (void (*)(), void (*)())'
+    | |-UnaryOperator 0xe5e8d0 <col:5, col:6> 'void (*)()' prefix '&' cannot overflow
+    | | `-DeclRefExpr 0xe5e8b0 <col:6> 'void ()' Function 0xe5d7d0 'f3' 'void ()'
+    | `-UnaryOperator 0xe5e908 <col:10, col:11> 'void (*)()' prefix '&' cannot overflow
+    |   `-DeclRefExpr 0xe5e8e8 <col:11> 'void ()' Function 0xe5d978 'f4' 'void ()'
+    `-ReturnStmt 0xe5e9e0 <line:34:5, col:12>
+      `-IntegerLiteral 0xe5e9c0 <col:12> 'int' 0

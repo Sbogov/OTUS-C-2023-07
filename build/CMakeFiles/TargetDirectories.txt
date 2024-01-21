@@ -1,0 +1,10 @@
+/mnt/d/project_work_OTUS/call_graph_with_graphviz/build/CMakeFiles/intrinsics_gen.dir
+/mnt/d/project_work_OTUS/call_graph_with_graphviz/build/CMakeFiles/omp_gen.dir
+/mnt/d/project_work_OTUS/call_graph_with_graphviz/build/CMakeFiles/acc_gen.dir
+/mnt/d/project_work_OTUS/call_graph_with_graphviz/build/CMakeFiles/clang_graphviz.dir
+/mnt/d/project_work_OTUS/call_graph_with_graphviz/build/CMakeFiles/test1.dir
+/mnt/d/project_work_OTUS/call_graph_with_graphviz/build/CMakeFiles/test2.dir
+/mnt/d/project_work_OTUS/call_graph_with_graphviz/build/CMakeFiles/graph.dir
+/mnt/d/project_work_OTUS/call_graph_with_graphviz/build/CMakeFiles/clean_all.dir
+/mnt/d/project_work_OTUS/call_graph_with_graphviz/build/CMakeFiles/edit_cache.dir
+/mnt/d/project_work_OTUS/call_graph_with_graphviz/build/CMakeFiles/rebuild_cache.dir
