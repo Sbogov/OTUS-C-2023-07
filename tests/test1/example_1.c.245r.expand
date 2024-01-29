@@ -1,0 +1,369 @@
+
+;; Function f1 (f1, funcdef_no=0, decl_uid=2344, cgraph_uid=1, symbol_order=0)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 82)
+        (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7fa27bc2a7e0 *.LC0>)) "example_1.c":4:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (reg:DI 82)) "example_1.c":4:5 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:DI ("*.LC0") [flags 0x2]  <var_decl 0x7fa27bc2a7e0 *.LC0>)
+        (nil)))
+(call_insn 7 6 0 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa27bb3a800 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) "example_1.c":4:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+
+;; Function f2 (f2, funcdef_no=1, decl_uid=2346, cgraph_uid=2, symbol_order=1)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 82)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7fa27bc2abd0 *.LC1>)) "example_1.c":8:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (reg:DI 82)) "example_1.c":8:5 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7fa27bc2abd0 *.LC1>)
+        (nil)))
+(call_insn 7 6 8 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa27bb3a800 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) "example_1.c":8:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 8 7 9 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "example_1.c":9:2 -1
+     (nil))
+(call_insn 9 8 0 2 (call (mem:QI (symbol_ref:DI ("f1") [flags 0x3]  <function_decl 0x7fa27bc1f700 f1>) [0 f1 S1 A8])
+        (const_int 0 [0])) "example_1.c":9:2 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+
+;; Function f3 (f3, funcdef_no=2, decl_uid=2348, cgraph_uid=3, symbol_order=2)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 82)
+        (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7fa27bc2af30 *.LC2>)) "example_1.c":13:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (reg:DI 82)) "example_1.c":13:5 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:DI ("*.LC2") [flags 0x2]  <var_decl 0x7fa27bc2af30 *.LC2>)
+        (nil)))
+(call_insn 7 6 0 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa27bb3a800 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) "example_1.c":13:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+
+;; Function f4 (f4, funcdef_no=3, decl_uid=2350, cgraph_uid=4, symbol_order=3)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 82)
+        (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7fa27bc382d0 *.LC3>)) "example_1.c":17:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (reg:DI 82)) "example_1.c":17:5 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:DI ("*.LC3") [flags 0x2]  <var_decl 0x7fa27bc382d0 *.LC3>)
+        (nil)))
+(call_insn 7 6 0 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa27bb3a800 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) "example_1.c":17:5 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+
+;; Function f5 (f5, funcdef_no=4, decl_uid=2354, cgraph_uid=5, symbol_order=4)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 func1+0 S8 A64])
+        (reg:DI 5 di [ func1 ])) "example_1.c":21:43 -1
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 func2+0 S8 A64])
+        (reg:DI 4 si [ func2 ])) "example_1.c":21:43 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (set (reg:DI 82)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 func2+0 S8 A64])) "example_1.c":22:5 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 83)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 func1+0 S8 A64])) "example_1.c":22:5 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 1 dx)
+        (reg:DI 82)) "example_1.c":22:5 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 4 si)
+        (reg:DI 83)) "example_1.c":22:5 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 84)
+        (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7fa27bc38630 *.LC4>)) "example_1.c":22:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 5 di)
+        (reg:DI 84)) "example_1.c":22:5 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:DI ("*.LC4") [flags 0x2]  <var_decl 0x7fa27bc38630 *.LC4>)
+        (nil)))
+(insn 13 12 14 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "example_1.c":22:5 -1
+     (nil))
+(call_insn 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("printf") [flags 0x41]  <function_decl 0x7fa27bb3a100 printf>) [0 __builtin_printf S1 A8])
+            (const_int 0 [0]))) "example_1.c":22:5 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 15 14 16 2 (set (reg/f:DI 85)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -8 [0xfffffffffffffff8])) [1 func1+0 S8 A64])) "example_1.c":23:2 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "example_1.c":23:2 -1
+     (nil))
+(call_insn 17 16 18 2 (call (mem:QI (reg/f:DI 85) [0 *func1_2(D) S1 A8])
+        (const_int 0 [0])) "example_1.c":23:2 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 18 17 19 2 (set (reg/f:DI 86)
+        (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -16 [0xfffffffffffffff0])) [1 func2+0 S8 A64])) "example_1.c":24:2 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "example_1.c":24:2 -1
+     (nil))
+(call_insn 20 19 21 2 (call (mem:QI (reg/f:DI 86) [0 *func2_3(D) S1 A8])
+        (const_int 0 [0])) "example_1.c":24:2 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 21 20 22 2 (set (reg:DI 87)
+        (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7fa27bc386c0 *.LC5>)) "example_1.c":25:2 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 5 di)
+        (reg:DI 87)) "example_1.c":25:2 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:DI ("*.LC5") [flags 0x2]  <var_decl 0x7fa27bc386c0 *.LC5>)
+        (nil)))
+(call_insn 23 22 0 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("puts") [flags 0x41]  <function_decl 0x7fa27bb3a800 __builtin_puts>) [0 __builtin_puts S1 A8])
+            (const_int 0 [0]))) "example_1.c":25:2 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+
+;; Function main (main, funcdef_no=5, decl_uid=2356, cgraph_uid=6, symbol_order=5)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+Removing jump 22.
+Merging block 5 into block 2...
+Merged blocks 2 and 5.
+Merged 2 and 5 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "example_1.c":29:5 -1
+     (nil))
+(call_insn 6 5 7 2 (call (mem:QI (symbol_ref:DI ("f1") [flags 0x3]  <function_decl 0x7fa27bc1f700 f1>) [0 f1 S1 A8])
+        (const_int 0 [0])) "example_1.c":29:5 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 7 6 8 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "example_1.c":30:5 -1
+     (nil))
+(call_insn 8 7 9 2 (call (mem:QI (symbol_ref:DI ("f2") [flags 0x3]  <function_decl 0x7fa27bc1f900 f2>) [0 f2 S1 A8])
+        (const_int 0 [0])) "example_1.c":30:5 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 9 8 10 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "example_1.c":31:2 -1
+     (nil))
+(call_insn 10 9 11 2 (call (mem:QI (symbol_ref:DI ("f3") [flags 0x3]  <function_decl 0x7fa27bc1fb00 f3>) [0 f3 S1 A8])
+        (const_int 0 [0])) "example_1.c":31:2 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 11 10 12 2 (set (reg:QI 0 ax)
+        (const_int 0 [0])) "example_1.c":32:2 -1
+     (nil))
+(call_insn 12 11 13 2 (call (mem:QI (symbol_ref:DI ("f4") [flags 0x3]  <function_decl 0x7fa27bc1fd00 f4>) [0 f4 S1 A8])
+        (const_int 0 [0])) "example_1.c":32:2 -1
+     (nil)
+    (expr_list (use (reg:QI 0 ax))
+        (nil)))
+(insn 13 12 14 2 (set (reg:DI 84)
+        (symbol_ref:DI ("f4") [flags 0x3]  <function_decl 0x7fa27bc1fd00 f4>)) "example_1.c":33:2 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 4 si)
+        (reg:DI 84)) "example_1.c":33:2 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("f4") [flags 0x3]  <function_decl 0x7fa27bc1fd00 f4>)
+        (nil)))
+(insn 15 14 16 2 (set (reg:DI 85)
+        (symbol_ref:DI ("f3") [flags 0x3]  <function_decl 0x7fa27bc1fb00 f3>)) "example_1.c":33:2 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 5 di)
+        (reg:DI 85)) "example_1.c":33:2 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("f3") [flags 0x3]  <function_decl 0x7fa27bc1fb00 f3>)
+        (nil)))
+(call_insn 17 16 18 2 (call (mem:QI (symbol_ref:DI ("f5") [flags 0x3]  <function_decl 0x7fa27bc1ff00 f5>) [0 f5 S1 A8])
+        (const_int 0 [0])) "example_1.c":33:2 -1
+     (nil)
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (nil))))
+(insn 18 17 21 2 (set (reg:SI 82 [ _7 ])
+        (const_int 0 [0])) "example_1.c":34:12 -1
+     (nil))
+(insn 21 18 25 2 (set (reg:SI 83 [ <retval> ])
+        (reg:SI 82 [ _7 ])) "example_1.c":35:1 -1
+     (nil))
+(insn 25 21 26 2 (set (reg/i:SI 0 ax)
+        (reg:SI 83 [ <retval> ])) "example_1.c":35:1 -1
+     (nil))
+(insn 26 25 0 2 (use (reg/i:SI 0 ax)) "example_1.c":35:1 -1
+     (nil))
