@@ -42,9 +42,9 @@ enum CXChildVisitResult visitorCallback(CXCursor cursor, CXCursor visitor, CXCli
     
     //Определение типа и имени родительского узла при обработке AST
     enum CXCursorKind kind = clang_getCursorKind(cursor); 
-    CXString kindName = clang_getCursorKindSpelling(kind); 
-    CXString cursorKind = clang_getCursorSpelling(cursor); 
+    CXString kindName = clang_getCursorKindSpelling(kind);  
     if (kind == CXCursor_FunctionDecl){ 
+        CXString cursorKind = clang_getCursorSpelling(cursor);
         DBG("Cursor Type -> %s\t-Function!!!\tFunction name -> %s\n", clang_getCString(kindName), clang_getCString(cursorKind));
 
         if (visitorData->parentNode != NULL){  
