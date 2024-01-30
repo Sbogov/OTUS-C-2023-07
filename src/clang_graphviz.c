@@ -68,7 +68,14 @@ enum CXChildVisitResult visitorCallback(CXCursor cursor, CXCursor visitor, CXCli
 }
 
 int main(int argc, char** argv) {
-    
+	
+	if (argc < 2){
+		fprintf(stderr, "Invalid args count\n");
+		printf("Correct usage:\n");
+		printf("./clang_graphviz <source_file_for_analize> [clang_arg1] [clang_arg2] [...]\n");
+		return 1;
+	}
+	    
     const char* mainFile = argv[1];
     const int clangArgsCount = (argc - 2) > 0 ? (argc - 2) : 0;
     const char* const* clangArgs = (clangArgsCount > 0) ? (const char* const*)(argv + 2) : NULL;
@@ -94,7 +101,7 @@ int main(int argc, char** argv) {
         return 1;
     }
 
-    FILE* graphvizFile = fopen("../output_graphviz/call_graph.dot", "w");
+    FILE* graphvizFile = fopen("./call_graph.dot", "w");
     if (!graphvizFile) {
         fprintf(stderr, "Couldn't create Graphviz file\n");
         clang_disposeIndex(index);
